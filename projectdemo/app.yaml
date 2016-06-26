@@ -1,0 +1,28 @@
+# Used for local development only
+api_version: 1
+threadsafe: true
+runtime: python27
+instance_class: F4_1G
+
+manual_scaling:
+  instances: 1
+
+libraries:
+- name: PIL
+  version: latest
+- name: ssl
+  version: latest
+- name: MySQLdb
+  version: latest
+
+env_variables:
+  DJANGO_SETTINGS_MODULE: 'project.settings'
+  DJANGO_ENV: 'local'
+  GAE_NAMESPACE: 'local'
+
+# Used for local development only
+# No security protections are enforced.
+handlers:
+- url: /.*
+  script: project.wsgi.application
+  # http_headers and authentication are handled by Django

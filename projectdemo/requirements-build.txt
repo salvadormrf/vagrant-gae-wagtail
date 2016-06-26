@@ -1,0 +1,8 @@
+# Dependencies required for running the build process
+
+MySQL-python==1.2.5
+# On appengine we use the supported PIL
+Pillow
+
+flake8
+pep8-naming
