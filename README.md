@@ -1,7 +1,7 @@
 Vagrant GAE
 ----------------------------------------
 
-Vagrant development box to run Google AppEngine.
+Vagrant development box to run wagtail projects with Google AppEngine.
 
 Documentation
 ----------------------------------------
